@@ -50,8 +50,7 @@ if not args.enroll:
 
     recognizer.train(images, np.array(labels, dtype=np.int32))
 
-# Experimental starting value, NOT an accuracy percentage.
-# Lower values make matching stricter.
+
 MATCH_THRESHOLD = 55.0
 
 pipeline = rs.pipeline()
